@@ -1,1 +1,1 @@
-# EEG-MNE_FILTERING
+# EEG-Preprocessing_MNE
