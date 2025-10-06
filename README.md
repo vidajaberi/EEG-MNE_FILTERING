@@ -1,28 +1,33 @@
-# EEG-Preprocessing_MNE
-# EEG Filtering & Resampling with MNE
+# EEG Preprocessing with MNE
 
-This repository shows how to preprocess EEG data using **MNE-Python**.  
-The notebook demonstrates basic steps such as band-pass filtering, notch filtering, re-referencing, and resampling.
-
----
-
-## 📂 Files
-- `filtering_resampling.ipynb` → Jupyter Notebook with the preprocessing code
-- `README.md` → Project description (this file)
+This repository contains simple Jupyter Notebooks demonstrating **EEG preprocessing** using [MNE-Python](https://mne.tools).  
+It is designed as a clean starting point for biomedical signal analysis and BCI research.
 
 ---
 
-## ⚡ Steps in the Notebook
-1. Load raw EEG data (supported formats: FIF, EDF, BDF, …)  
-2. Apply band-pass filter (e.g., 1–40 Hz)  
-3. Remove line noise with notch filter (50/60 Hz)  
-4. Set average reference  
-5. Resample the data (e.g., from 250 Hz to 128 Hz)  
-6. Visualize raw signals and PSD plots  
+## 📂 Notebooks
+
+- **`filtering_resampling.ipynb`**  
+  Demonstrates how to:
+  - Load raw EEG data
+  - Apply band-pass filtering (e.g., 1–40 Hz)
+  - Remove line noise with notch filter (50/60 Hz)
+  - Set average reference
+  - Resample the data (e.g., from 250 Hz to 128 Hz)
+  - Visualize raw signals and PSD plots  
+
+- **`creating_epoched_data.ipynb`**  
+  Demonstrates how to:
+  - Detect and extract events from raw EEG
+  - Create epochs aligned to stimulus markers
+  - Apply baseline correction
+  - Visualize averaged responses (ERP/ERF)
+  - Prepare data for classification or feature extraction  
 
 ---
 
 ## ▶️ How to Run
+
 1. Install dependencies:
    ```bash
    pip install mne numpy scipy matplotlib
